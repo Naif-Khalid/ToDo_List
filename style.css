@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 50px; /* Adjusted space for the counter */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ... existing CSS ... */
+#todo-form {
+    display: flex;
+    align-items: center; /* Align form elements */
+    margin-bottom: 20px;
+}
+
+.task-counter {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px; /* Adjust padding */
+    margin-left: 10px; /* Space from the button */
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+/* ... rest of the CSS ... */
+
+
+
+#new-task {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#todo-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeIn 0.3s ease;
+}
+
+#todo-list li:hover {
+    background-color: #f8f9fa;
+}
+
+.completed-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.completed-btn:hover {
+    background-color: #218838;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
